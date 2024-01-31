@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets\fonts\Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets\fonts\Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+html{
+    background: hsl(235, 18%, 26%) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 10px;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.main-div{
+    display: grid;
+    font-family: 'Roboto';
+    padding: 30px;
+    width: 755px;
+    height: auto;
+    box-shadow: 0px 0px 20px 0px hsla(0, 0%, 0%, 0.568);
+    border: 1.5px solid hsl(234, 29%, 20%);
+    word-wrap: normal;
+    border-radius: 35px;
+    background: #ffffff;
+    padding-left: 50px;
+    grid-template-areas: "header header"
+                        "content sidebar" 
+                        "content sidebar"
+                        "content sidebar";
+}
+
+.main-text{
+    display: grid;
+    justify-content: start;
+    grid-area: content;
+}
+
+.img-desktop-wrapper{
+    display: grid;
+    justify-content: end;
+    grid-area: sidebar;
+    padding-left: 20px;
+}
+
+.Stay-h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: -40px;
+}
+
+.join-p1{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: -50px;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.product-h1{
+    padding-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.measuring{
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+    margin-bottom: 0px;
+}
+
+
+.measuring-h1{
+    padding-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.much{
+    display: flex;
+    align-items: center;
+    margin-top: -19px;
+}
+
+.much-h1{
+    padding-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.input-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    color: #ff6155;
+}
+
+.email-placeholder{
+    outline: none;
+    padding: 20px;
+    padding-left: 18px;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'Roboto';
+    width:300px;
+}
+
+.subscribe-button{
+    outline: none;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 6px;
+    width: 340px;
+    height: 50px;
+    color: #ffffff;
+}
+
+/*Succes page*/
+
+.succes-div{
+    display: none;
+    font-family: 'Roboto';
+    padding: 30px;
+    width: 275px;
+    height: auto;
+    box-shadow: 0px 0px 20px 0px hsla(0, 0%, 0%, 0.568);
+    border: 1.5px solid hsl(234, 29%, 20%);
+    word-wrap: normal;
+    border-radius: 25px;
+    background: #ffffff;
+}
+
+.succes-h1{
+    font-size: 2rem;
+    color: hsl(234, 29%, 20%);
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.succes-button{
+    outline: none;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 6px;
+    width: auto;
+    height: 40px;
+    color: #ffffff;
+}
+
+.succes-p{
+    font-size: calc(0.7rem + 1px);
+    color: hsl(234, 29%, 20%);
+    padding-bottom: 20px;
+}
+@media screen and (width < 886px) {
+    .main-div{
+        width: 600px;
+        border-radius: 20px;
+    }
+
+    .img-desktop{
+        width: 250px;
+    }
+
+    .Stay-h1{
+        font-size: 2.5rem;
+    }
+
+    .join-p1{
+        font-size: 0.7rem;
+    }
+
+    .list-items h2,.list-items h3,.list-items h4{
+        font-size: 0.7rem;
+    }
+
+    .icon-list{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .email{
+        font-size: 0.7rem;
+        margin-top: -36px;
+    }
+
+    .email-placeholder{
+        width: 286px;
+        padding-left: 14px;
+        padding: 15px;
+    }
+
+    .email-input{
+        margin-top: -52px;
+    }
+
+    .subscribe-button{
+        width: 318px;
+        margin-top: -36px;
+    }
+}
+
+@media screen and (375px <= width < 886px){
+
+    html{
+        background-color: #ffffff;
+        display: block;
+        padding: 2rem;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .main-div{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0;
+        border: none;
+        justify-content: center;
+        background: none;
+        grid-template-areas: 
+        "header header"
+        "content content"
+        "content content";
+    }
+
+    .succes-div{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0;
+        border: none;
+        justify-content: center;
+        background: none;
+        padding-top: 7.5rem;
+    }
+
+    .succes-p{
+        padding-bottom: 10rem;
+    }
+    
+    .img-desktop{
+        display: none;
+    }
+    
+    .img-mobile{
+        display: block;
+        width: 100vw;
+    }
+
+    .img-desktop-wrapper{
+        display: grid;
+        width: auto;
+        justify-content: center;
+        grid-area: header;
+        padding: 0;
+    }
+
+    .main-text{
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+    }
+
+    .Stay-h1{
+        margin: 0;
+        padding-top: 30px;
+    }
+    
+    .join-p1{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+    
+    .email{
+        margin: 0;
+    }
+    
+    .email-input{
+        margin:0;
+        padding-top: 10px;
+    }
+
+    .subscribe-button{
+        margin: 0;
+    }
+    
+    .subscribe-holder{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+.main-div.active{
+    display: none;
+}
+
+.succes-div.active{
+    display: grid;
+}

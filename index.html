@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <div class="main-div">
+      <div class="img-desktop-wrapper">
+        <img class="img-mobile" src="assets\images\illustration-sign-up-mobile.svg" alt="">
+        <img class="img-desktop" src="assets\images\illustration-sign-up-desktop.svg">
+      </div>
+      <div class="main-text">
+        <h1 class="Stay-h1 main">Stay updated!</h1> 
+        <p class="join-p1 main">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="list-items">
+          <div class="product">
+            <img class="icon-list" src="assets\images\icon-list.svg" alt="">
+            <h2 class="product-h1 main">Product discovery and building what matters</h2>
+          </div>
+  
+          <div class="measuring">
+            <img class="icon-list" src="assets\images\icon-list.svg" alt="">
+            <h3 class="measuring-h1 main">Measuring to ensure updates are a success</h3>
+          </div>
+  
+          <div class="much">
+            <img class="icon-list" src="assets\images\icon-list.svg" alt="">
+            <h4 class="much-h1 main">And much more!</h4>
+          </div>
+        </div>
+        <div class="input-items">
+            <div class="labels">
+            <h5 class="email">Email address</h5><label class="emailLabel"></label></div>
+            <div class="email-input">
+              <input type="email" id="email-placeholder" class="email-placeholder main" placeholder="email@company.com">
+            </div>
+            <div class="subscribe-holder">
+              <button class="subscribe-button" style="cursor: pointer;" type="submit">Subscribe to monthly newsletter</button>
+            </div>
+
+          </div>
+      </div>
+  </div>
+
+
+
+    <div class="succes-div">
+      <img src="/assets/images/icon-success.svg" alt="">
+      <h1 class="succes-h1">Thanks for subscribing!</h1>
+      <p class="succes-p">
+        A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="succes-button" style="cursor: pointer;" type="submit">Dismiss message</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
